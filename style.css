@@ -1,6 +1,5 @@
-html {
-    height: 100%;
-}
+/* html {
+} */
 
 body {
     background-image: linear-gradient(#FC5E55, #FA4083);
@@ -27,6 +26,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid lightgray;
 }
 
 main {
@@ -47,6 +47,7 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card2 {
@@ -55,6 +56,7 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card3 {
@@ -63,11 +65,13 @@ main {
     background-position: bottom;
     min-height: 250px;
     width: 30%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .card1, .card2, .card3 {
     padding: 30px 30px 20px 30px;
     box-sizing: border-box;
+    border-radius: 6px;
 }
 
 .herobox1 {
@@ -83,6 +87,7 @@ h1 {
     font-size: 3.25rem;
     font-family: 'Playfair Display', serif;
     margin-bottom: 1rem;
+    text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 h2 {
@@ -111,4 +116,51 @@ p {
     color: #FA4083;
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.myButton:hover {
+    background-color: rgb(247, 153, 148);
+    transition-duration: 1s;
+}
+
+a.myButton {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+nav a.myButton {
+    margin-left: 30px;
+}
+
+.navButton {
+    font-family: 'Playfair Display', serif;
+    padding: 11px 25px;
+    border-radius: 2px;
+    /* border-style: solid;
+    border-color: white;
+    border-width: 1px; 
+    long way but worked */
+    border: 1px solid white;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.tbox {
+    width: 47%;
+    padding: 50px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.tbox p:last-of-type {
+    font-size: 0.8rem;
+    padding-left: 30px;
 }
