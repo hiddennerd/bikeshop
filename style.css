@@ -1,8 +1,11 @@
-/* html {
-} */
+html {
+    background-image: linear-gradient(#FC5E55, #FA4083);
+}
 
 body {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: url(images/image-lion-background.png);
+    background-position: top center;
+    background-repeat: no-repeat;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-size: 1.125rem;
@@ -33,6 +36,10 @@ main {
     min-height: 300px;
     display: flex;
     align-items: center;
+}
+.main2 {
+    min-height: 300px;
+    padding-top: 50px;
 }
 
 .cards {
@@ -138,11 +145,9 @@ nav a.myButton {
     font-family: 'Playfair Display', serif;
     padding: 11px 25px;
     border-radius: 2px;
-    /* border-style: solid;
-    border-color: white;
-    border-width: 1px; 
-    long way but worked */
     border: 1px solid white;
+    display: inline-block;
+    position: relative;
 }
 
 .testimonials {
@@ -163,4 +168,27 @@ nav a.myButton {
 .tbox p:last-of-type {
     font-size: 0.8rem;
     padding-left: 30px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding-top: 13px;
+    z-index: 1;
+    text-align: center;
+}
+
+.navButton:hover .dropdown {
+    display: block;
+}
+
+.dropdown .navButton {
+     width: 150px;
+     background-color: white;
+     margin-left: -50px;
+     margin-top: 5px;
+ }
+
+ .dropdown .navButton a {
+    color: #FC5E55;
 }
